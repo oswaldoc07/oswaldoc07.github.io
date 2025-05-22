@@ -58,3 +58,16 @@ ul {
   list-style-type: disc;
   padding-left: 1.5rem;
 }
+ .lang-switch {
+      text-align: right;
+      margin: 10px 20px;
+    }
+    .lang-switch button {
+      padding: 5px 10px;
+      cursor: pointer;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+    }
