@@ -7,11 +7,15 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <div class="lang-switch">
+    <button onclick="switchLanguage()">Español / English</button>
+  </div>
+
   <div class="container">
     <div class="profile">
       <img src="https://avatars.githubusercontent.com/u/73155138?v=4" alt="Foto de Oswaldo" class="avatar" />
       <h1>Oswaldo Cortés Cascante</h1>
-      <p class="title">Desarrollador Backend Senior | Java & Spring Boot | DevOps</p>
+      <p class="title" id="title">Desarrollador Backend Senior | Java & Spring Boot | DevOps</p>
       <div class="links">
         <a href="https://www.linkedin.com/in/oswaldocortes" target="_blank">LinkedIn</a>
         <a href="https://github.com/oswaldoc07" target="_blank">GitHub</a>
@@ -20,13 +24,13 @@
     </div>
 
     <section>
-      <h2>Resumen Profesional</h2>
-      <p>Ingeniero en informática con más de 12 años de experiencia en desarrollo backend con Java, Spring Framework, microservicios, y bases de datos relacionales. Experiencia en arquitectura de software, integración de APIs, y despliegue en la nube (Azure, Docker, Kubernetes). Fuertes habilidades en resolución de problemas y trabajo en equipos internacionales.</p>
+      <h2 id="summary-title">Resumen Profesional</h2>
+      <p id="summary-text">Ingeniero en informática con más de 12 años de experiencia en desarrollo backend con Java, Spring Framework, microservicios, y bases de datos relacionales...</p>
     </section>
 
     <section>
-      <h2>Habilidades Técnicas</h2>
-      <ul>
+      <h2 id="skills-title">Habilidades Técnicas</h2>
+      <ul id="skills-list">
         <li>Programming: Java (1.6, 1.8,1.11, 1.17), Groovy.</li>
         <li>Backend Technologies: SpringFramework, Spring Boot, Quarkus.</li>
         <li>Web Services: SOAP, REST(JavaEE, Spring Boot).</li>
@@ -43,12 +47,41 @@
     </section>
 
     <section>
-      <h2>Experiencia Destacada</h2>
-      <ul>
-        <li><strong>Encora / EE.UU. — Senior Java Developer</strong><br><em>2020 - Presente</em><br>Desarrollo de microservicios para sistemas financieros y aseguradoras en EE.UU.</li>
-        <li><strong>Marirovi SRL — Líder Técnico</strong><br><em>2015 - 2020</em><br>Diseño y construcción de sistemas ERP internos con Java y JSF.</li>
+      <h2 id="experience-title">Experiencia Destacada</h2>
+      <ul id="experience-list">
+        <li><strong>Encora / EE.UU. — Senior Java Developer</strong><br><em>2020 - Presente</em><br>Desarrollo de microservicios...</li>
+        <li><strong>Marirovi SRL — Líder Técnico</strong><br><em>2015 - 2020</em><br>Diseño y construcción de sistemas ERP internos...</li>
       </ul>
     </section>
   </div>
+
+  <script>
+    let isSpanish = true;
+    function switchLanguage() {
+      isSpanish = !isSpanish;
+
+      document.getElementById("title").textContent = isSpanish
+        ? "Desarrollador Backend Senior | Java & Spring Boot | DevOps"
+        : "Senior Backend Developer | Java & Spring Boot | DevOps";
+
+      document.getElementById("summary-title").textContent = isSpanish
+        ? "Resumen Profesional"
+        : "Professional Summary";
+
+      document.getElementById("summary-text").textContent = isSpanish
+        ? "Ingeniero en informática con más de 12 años de experiencia en desarrollo backend con Java, Spring Framework, microservicios, y bases de datos relacionales..."
+        : "Computer engineer with over 12 years of experience in backend development using Java, Spring Framework, microservices, and relational databases...";
+
+      document.getElementById("skills-title").textContent = isSpanish
+        ? "Habilidades Técnicas"
+        : "Technical Skills";
+
+      document.getElementById("experience-title").textContent = isSpanish
+        ? "Experiencia Destacada"
+        : "Key Experience";
+
+      // Puedes agregar más traducciones si necesitas que la lista de habilidades también cambie
+    }
+  </script>
 </body>
 </html>
