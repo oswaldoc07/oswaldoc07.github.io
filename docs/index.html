@@ -20,9 +20,8 @@
 
     <div class="content-columns">
       <aside class="left-column">
-	   <section>
-	    </section>
-        <h3>CONTACT</h3>
+	   <section>	  
+        <h3 id ="contact">CONTACT</h3>
 		<p>📞 +506 87560869<p>
         <p>📧 oswaldo@gmail.com</p>
         <p>📍 San Jose, Moravia, San Vicente</p>
@@ -31,9 +30,10 @@
 				<path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.16h.05c.53-.99 1.83-2.03 3.76-2.03 4.02 0 4.77 2.65 4.77 6.1V24h-4V14.27c0-2.33-.04-5.32-3.24-5.32-3.24 0-3.73 2.53-3.73 5.14V24h-4V8z"/>
 			</svg>		
 		</a>
+	</section>
 	   <section>
 	    <h3 id="skills-title">SKILLS</h3>
-          <ul id="skills-list-english">
+          <ul class="skills-text"id="skills-list-english">
             <li>Programming: Java (1.6, 1.8, 1.11, 1.17), Groovy.</li>
             <li>Backend Technologies: Spring Framework, Spring Boot, Quarkus.</li>
             <li>Web Services: SOAP, REST (JavaEE, Spring Boot).</li>
@@ -48,7 +48,7 @@
             <li>Project Management: Jira, GitHub Projects, Confluence.</li>
           </ul>
 		  
-		   <ul style="display:none"  id="skills-list-spanish">
+		   <ul class="skills-text" style="display:none"  id="skills-list-spanish">
             <li>Programacion: Java (1.6, 1.8, 1.11, 1.17), Groovy.</li>
             <li>Tegnologias Backend: Spring Framework, Spring Boot, Quarkus.</li>
             <li>Servicios Web: SOAP, REST (JavaEE, Spring Boot).</li>
@@ -73,7 +73,7 @@
               <button id="switchButton" class="switch-button" onclick="switchLanguage()">Versión Español</button>
             </div>
           </div>
-          <p id="summary-text">
+          <p class="summary-text" id="summary-text">
             Computer engineer with over 12 years of experience in backend development using Java and Spring. Skilled in building scalable systems, integrating APIs, and leading technical teams. Proactive problem-solving, clean code, and strong collaboration with cross-functional teams.
           </p>
         </section>
@@ -113,6 +113,10 @@
       document.getElementById("skills-title").textContent = isSpanish
         ? "HABILIDADES"
         : "SKILLS";
+		
+	  document.getElementById("contact").textContent = isSpanish
+        ? "CONTACTO"
+        : "CONTACT";
     }
   </script>
 </body>
