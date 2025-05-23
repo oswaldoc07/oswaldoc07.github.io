@@ -7,57 +7,57 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
- 
-
-<div class="container">
- <div class="profile">
-		<div class="profile-header">
-			<img src="https://avatars.githubusercontent.com/u/73155138?v=4" alt="Foto de Oswaldo" class="avatar" />
-			 
-			<div>
-				<h1>Oswaldo Cortés Cascante</h1>
-				<p class="title" id="title">Senior Backend Developer | Java & Spring Boot</p>
-			</div>
-		</div>   
-     		
- </div>
-	
-    <section>
-	 <div class="links">
-        <a href="https://www.linkedin.com/in/oswaldocortes" target="_blank">LinkedIn</a>
-      </div> 
-	<div>
-	 <div class="summary-button">
-      <h2 id="summary-title">Professional Summary</h2>
-	   <div class="lang-switch">
-         <button id ="switchButton"onclick="switchLanguage()">Version a Español</button>
-       </div>
-	 </div>  
-      <p id="summary-text">Computer engineer with over 12 years of experience in backend development using Java and Spring. Skilled in building scalable systems, integrating APIs, and leading technical teams. Proactive probem-solving, clean code, and strong collaboration with cross-functional teams.</p>
+  <div class="container">
+    <div class="profile">
+      <div class="profile-header">
+        <img src="https://avatars.githubusercontent.com/u/73155138?v=4" alt="Foto de Oswaldo" class="avatar" />
+        <div>
+          <h1>Oswaldo Cortés Cascante</h1>
+          <p class="title" id="title">Senior Backend Developer | Java & Spring Boot</p>
+        </div>
+      </div>
     </div>
-	</section>
 
-    <section>
-      <h2 id="skills-title">Technical Skills</h2>
-      <ul id="skills-list">
-        <li>Programming: Java (1.6, 1.8,1.11, 1.17), Groovy.</li>
-        <li>Backend Technologies: SpringFramework, Spring Boot, Quarkus.</li>
-        <li>Web Services: SOAP, REST(JavaEE, Spring Boot).</li>
-        <li>Microservices: Spring Boot, Spring Cloud, Docker.</li>
-        <li>Servers: Tomcat, WebSphere,Glassfish, Tomee.</li>
-        <li>Databases: PostgreSQL, SQLServer, MySQL, MariaDB, Oracle.</li>
-        <li>Frontend Technologies: JavaScript, JSF(Icefaces, Primefaces), HTML, CSS.</li>
-        <li>Version Control: SVN, GitHub, GitLab, Git (Azure DevOps).</li>
-        <li>Build Automation: Gradle, Maven.</li>
-        <li>CI/CD: Configuration & management of pipelines (AzureDevOps).</li>
-        <li>Software Development: SDLC, Agile (Scrum).</li>
-        <li>Project Management: Jira, GitHub Projects, Confluence.</li>
-      </ul>
-    </section>
+    <div class="content-columns">
+      <aside class="left-column">
+        <h3>Contacto</h3>
+        <p>📧 oswaldo@gmail.com</p>
+        <p>📍 Moravia, CR</p>
+        <p><a href="https://www.linkedin.com/in/oswaldocortes" target="_blank">LinkedIn</a></p>
+      </aside>
 
-    <section>
-    
-    </section>
+      <main class="right-column">
+        <section>
+          <div class="summary-button">
+            <h2 id="summary-title">Professional Summary</h2>
+            <div>
+              <button id="switchButton" class="switch-button" onclick="switchLanguage()">Version a Español</button>
+            </div>
+          </div>
+          <p id="summary-text">
+            Computer engineer with over 12 years of experience in backend development using Java and Spring. Skilled in building scalable systems, integrating APIs, and leading technical teams. Proactive problem-solving, clean code, and strong collaboration with cross-functional teams.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="skills-title">Technical Skills</h2>
+          <ul id="skills-list">
+            <li>Programming: Java (1.6, 1.8, 1.11, 1.17), Groovy.</li>
+            <li>Backend Technologies: Spring Framework, Spring Boot, Quarkus.</li>
+            <li>Web Services: SOAP, REST (JavaEE, Spring Boot).</li>
+            <li>Microservices: Spring Boot, Spring Cloud, Docker.</li>
+            <li>Servers: Tomcat, WebSphere, Glassfish, Tomee.</li>
+            <li>Databases: PostgreSQL, SQL Server, MySQL, MariaDB, Oracle.</li>
+            <li>Frontend Technologies: JavaScript, JSF (Icefaces, Primefaces), HTML, CSS.</li>
+            <li>Version Control: SVN, GitHub, GitLab, Git (Azure DevOps).</li>
+            <li>Build Automation: Gradle, Maven.</li>
+            <li>CI/CD: Azure DevOps pipelines configuration.</li>
+            <li>Software Development: SDLC, Agile (Scrum).</li>
+            <li>Project Management: Jira, GitHub Projects, Confluence.</li>
+          </ul>
+        </section>
+      </main>
+    </div>
   </div>
 
   <script>
@@ -68,10 +68,10 @@
       document.getElementById("title").textContent = isSpanish
         ? "Desarrollador Backend Senior | Java & Spring Boot"
         : "Senior Backend Developer | Java & Spring Boot";
-		
-	  document.getElementById("switchButton").textContent = isSpanish
-        ? "English Version" 
-        : "Version a Español";
+
+      document.getElementById("switchButton").textContent = isSpanish
+        ? "English Version"
+        : "Versión a Español";
 
       document.getElementById("summary-title").textContent = isSpanish
         ? "Resumen Profesional"
@@ -79,17 +79,11 @@
 
       document.getElementById("summary-text").textContent = isSpanish
         ? "Ingeniero informático con más de 12 años de experiencia en desarrollo backend con Java y Spring. Experto en la creación de sistemas escalables, la integración de API y la dirección de equipos técnicos. Resolución proactiva de problemas, código limpio y una sólida colaboración con equipos multifuncionales."
-        : "Computer engineer with over 12 years of experience in backend development using Java and Spring. Skilled in building scalable systems, integrating APIs, and leading technical teams. Proactive probem-solving, clean code, and strong collaboration with cross-functional teams.";
+        : "Computer engineer with over 12 years of experience in backend development using Java and Spring. Skilled in building scalable systems, integrating APIs, and leading technical teams. Proactive problem-solving, clean code, and strong collaboration with cross-functional teams.";
 
       document.getElementById("skills-title").textContent = isSpanish
         ? "Habilidades Técnicas"
         : "Technical Skills";
-
-      document.getElementById("experience-title").textContent = isSpanish
-        ? "Experiencia Destacada"
-        : "Key Experience";
-
-      // Puedes agregar más traducciones si necesitas que la lista de habilidades también cambie
     }
   </script>
 </body>
