@@ -127,5 +127,6 @@ ul {
 .right-column {
   flex: 3;
   padding: 1rem 0;
+  background:rgb(253, 253, 253);
 }
  
