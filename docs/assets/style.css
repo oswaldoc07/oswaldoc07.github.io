@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width:60%;
   margin: 0 auto;
   padding: 2rem;
   background: #fff;
@@ -15,17 +15,24 @@ body {
 }
 
 .profile {
-  background:rgb(50, 59, 76);
+  background: rgb(50, 59, 76);
   color: white;
-  height:220px;
+  padding: 1.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
 }
  .profile-header {
   display: flex;
   align-items: center;
   gap: 15px; /* espacio entre la imagen y el texto */
 }
+.summary-button{
+ display: flex;
+  align-items: center;
+}
 .summary-title{
 	margin-top:20px;
+	color:rgb(50, 59, 76);
 }
 
 .avatar {
@@ -34,7 +41,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  margin-top:10px;
+  margin-top:1%;
 }
 
 .title {
@@ -44,8 +51,7 @@ body {
 }
 
 .links {
-  text-align: center;
-  margin-top: 5px;
+  margin-left: 5%;
 }
 
 .links a {
@@ -85,3 +91,26 @@ ul {
       font-weight: bold;
  }
  
+ @media screen and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+    padding: 1rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  .links {
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
