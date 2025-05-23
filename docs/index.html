@@ -41,7 +41,7 @@
 
         <section>
           <h2 id="skills-title">Technical Skills</h2>
-          <ul id="skills-list">
+          <ul id="skills-list-english">
             <li>Programming: Java (1.6, 1.8, 1.11, 1.17), Groovy.</li>
             <li>Backend Technologies: Spring Framework, Spring Boot, Quarkus.</li>
             <li>Web Services: SOAP, REST (JavaEE, Spring Boot).</li>
@@ -55,6 +55,21 @@
             <li>Software Development: SDLC, Agile (Scrum).</li>
             <li>Project Management: Jira, GitHub Projects, Confluence.</li>
           </ul>
+		  
+		   <ul style="display:none"  id="skills-list-spanish">
+            <li>Programacion: Java (1.6, 1.8, 1.11, 1.17), Groovy.</li>
+            <li>Tegnologias Backend: Spring Framework, Spring Boot, Quarkus.</li>
+            <li>Servicios Web: SOAP, REST (JavaEE, Spring Boot).</li>
+            <li>Microservicios: Spring Boot, Spring Cloud, Docker.</li>
+            <li>Servidores: Tomcat, WebSphere, Glassfish, Tomee.</li>
+            <li>Bases de Datos: PostgreSQL, SQL Server, MySQL, MariaDB, Oracle.</li>
+            <li>Tecgnologias Frontend: JavaScript, JSF (Icefaces, Primefaces), HTML, CSS.</li>
+            <li>Control de Versiones: SVN, GitHub, GitLab, Git (Azure DevOps).</li>
+            <li>Automaticacion Compilacion: Gradle, Maven.</li>
+            <li>CI/CD: Azure DevOps pipelines configuration.</li>
+            <li>Desarrollo de Sofware: SDLC, Agile (Scrum).</li>
+            <li>Manejo de Proyectos: Jira, GitHub Projects, Confluence.</li>
+          </ul>
         </section>
       </main>
     </div>
@@ -64,7 +79,13 @@
     let isSpanish = false;
     function switchLanguage() {
       isSpanish = !isSpanish;
-
+		if(isSpanish){
+		  document.getElementById("skills-list-english").style.display = "none";
+		  document.getElementById("skills-list-spanish").style.display = "block";
+		}else{
+		document.getElementById("skills-list-english").style.display = "block";
+		  document.getElementById("skills-list-spanish").style.display = "none";
+		}
       document.getElementById("title").textContent = isSpanish
         ? "Desarrollador Backend Senior | Java & Spring Boot"
         : "Senior Backend Developer | Java & Spring Boot";
