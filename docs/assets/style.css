@@ -7,24 +7,27 @@ body {
 }
 
 .container {
-  max-width:100%;
+  width: 794px; /* ancho de A4 en px a 96dpi */
+  height: 1123px; /* alto de A4 */
   margin: 0 auto;
   padding: 2rem;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+
 }
 
 .profile {
-  background: rgb(50, 59, 76);
+  background:rgb(50, 59, 76);
   color: white;
   padding: 1.5rem;
-  max-width: 100%;
-  box-sizing: border-box;
+  margin-bottom: 1rem;
 }
  .profile-header {
   display: flex;
   align-items: center;
   gap: 15px; /* espacio entre la imagen y el texto */
+  color: white;
 }
 .summary-button{
  display: flex;
@@ -46,8 +49,6 @@ body {
 
 .title {
   color: white;
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
 }
 
 .links {
@@ -91,26 +92,3 @@ ul {
       font-weight: bold;
  }
  
- @media screen and (max-width: 768px) {
-  .container {
-    max-width: 95%;
-    padding: 1rem;
-  }
-
-  .profile-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .avatar {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-  }
-
-  .links {
-    text-align: center;
-    margin-top: 1rem;
-    margin-left: 0;
-  }
-}
