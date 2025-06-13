@@ -1,185 +1,327 @@
-body {
-  font-family: "Segoe UI", sans-serif;
-  background: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=794, user-scalable=no" />
+  <title>Oswaldo Cortes - Perfil Profesional</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .page-row {
+      display: flex;
+      gap: 2rem;
+      align-items: stretch;
+    }
 
-.container {
-  width: auto;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-}
+    .page-left,
+    .page-right {
+      height: 855px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="profile-header">
+        <img src="https://avatars.githubusercontent.com/u/73155138?v=4" alt="Foto de Oswaldo" class="avatar" />
+        <div>
+          <h1>Oswaldo Cortes Cascante</h1>
+          <p class="title" id="title">Senior Backend Developer | Java & Spring Boot</p>
+        </div>
+      </div>
+    </div>
 
-.profile {
-  background: rgb(50, 59, 76);
-  color: white;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-}
+    <!-- PAGINA 1 -->
+    <div class="page-row">
+      <aside class="left-column">
+        <div class="page-left">
+          <section>
+            <h2 id="contact">CONTACT</h2>
+            <p>📞 +506 87560869</p>
+            <p>📧 oswaldo@gmail.com</p>
+            <p>📍 San Jose, Moravia, San Vicente</p>
+            <a href="https://www.linkedin.com/in/oswaldo-cortes-cascante-ab793a93/" target="_blank" class="linkedin-button">
+              <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.16h.05c.53-.99 1.83-2.03 3.76-2.03 4.02 0 4.77 2.65 4.77 6.1V24h-4V14.27c0-2.33-.04-5.32-3.24-5.32-3.24 0-3.73 2.53-3.73 5.14V24h-4V8z"/>
+              </svg>
+            </a>
+          </section>
 
-.profile-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  color: white;
-}
+          <section>
+            <h2 id="skills-title">SKILLS</h2>
+            <ul class="skills-text" id="skills-list-english">
+              <li>Programming Languages: Java (1.6, 1.8, 11, 17), Groovy.</li>
+              <li>Backend Technologies: Spring Framework, Spring Boot, Java EE.</li>
+              <li>Web Services: SOAP, REST (Spring Boot, Java EE).</li>
+              <li>Persistence: Hibernate, JDBC.</li>
+              <li>Databases: PostgreSQL, SQL Server, MySQL, MariaDB, Oracle.</li>
+              <li>Microservices & Containerization: Spring Boot, Spring Cloud, Docker.</li>
+              <li>Resilience & Fault Tolerance: Resilience4j (Circuit Breaker, Retry, Rate Limiter).</li>
+              <li>Metrics Monitoring: Prometheus & Grafana.</li>
+              <li>Distributed Tracing: OpenTelemetry & Zipkin.</li>
+              <li>Application Servers: Apache Tomcat, IBM WebSphere Application Server, Eclipse GlassFish, Apache TomEE.</li>
+              <li>Build & Automation Tools: Maven, Gradle.</li>
+              <li>CI/CD: Pipeline configuration and management (Azure DevOps).</li>
+              <li>Frontend Technologies: JSP, JSF, JavaScript, HTML, CSS.</li>
+              <li>Version Control: Git (GitHub, GitLab, Azure DevOps), SVN.</li>
+              <li>Development Methodologies: SDLC, Agile (Scrum).</li>
+              <li>Project Management Tools: Jira, GitHub Projects, Confluence.</li>
+            </ul>
 
-.switch-button {
-  background-color: #007BFF;
-  color: white;
-  padding: 5px 10px;
-  font-size: 0.5rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-left: auto;
-}
+            <ul class="skills-text" style="display:none" id="skills-list-spanish">
+              <li>Programacion: Java (1.6, 1.8, 1.11, 1.17), Groovy.</li>
+              <li>Tegnologias Backend: Spring Framework, Spring Boot, Quarkus.</li>
+              <li>Servicios Web: SOAP, REST (JavaEE, Spring Boot).</li>
+              <li>Microservicios: Spring Boot, Spring Cloud, Docker.</li>
+              <li>Servidores: Tomcat, WebSphere, Glassfish, Tomee.</li>
+              <li>Bases de Datos: PostgreSQL, SQL Server, MySQL, MariaDB, Oracle.</li>
+              <li>Tecgnologias Frontend: JavaScript, JSF (Icefaces, Primefaces), HTML, CSS.</li>
+              <li>Control de Versiones: SVN, GitHub, GitLab, Git (Azure DevOps).</li>
+              <li>Automaticacion Compilacion: Gradle, Maven.</li>
+              <li>CI/CD: Azure DevOps pipelines configuration.</li>
+              <li>Desarrollo de Sofware: SDLC, Agile (Scrum).</li>
+              <li>Manejo de Proyectos: Jira, GitHub Projects, Confluence.</li>
+            </ul>
+          </section>
+        </div>
+      </aside>
 
-.switch-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-}
+      <main class="right-column">
+        <div class="page-right">	
+       <section>
+		  <div class="summary-professional">
+			<h2 id="summary-title">PROFESSIONAL SUMMARY</h2>
+			<button id="switchButton" class="switch-button" onclick="switchLanguage()">Version Español</button>
+		  </div>
 
-.summary-professional {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+		  <div class="summary-text" id="summary-text">
+			<p>
+			  Computer engineer with over 12 years of experience in backend development using Java and Spring.
+			  Skilled in building scalable systems, integrating APIs, and leading technical teams.
+			  Proactive problem-solving, clean code, and strong collaboration with cross-functional teams.
+			</p>
+		  </div>
+		</section>
+		
+		 <section id ="work-experience-english-1"> 				 
+            <h2>WORK EXPERIENCE</h2>
+            <h4>-BrandSafway 06/2023 -Present</h4>
+			<h4>Sr Profesional, Sofware Development Engineering (Java)</h4>
+            <p>
+			  BrandSafway is a global leader in access solutions, scaffolding, and industrial services, 
+             operating across construction, maintenance, and infrastructure sectors, 
+             it provides products and services to enhance safet and efficiency in projects.
+            </p>
+            <ul>
+              <li>
+                <strong>Project: SafQuote (06/2023 - Present)</strong>
+                <p>
+                  SafQuote is a sophisticated solution designed to streamline the quoting
+                  process for a variety of projects, enabling the efficient estimation of costs
+                  for materials, labor, and transportation. The system empowers both
+                  current and potential clients to receive accurate and comprehensive
+                  quotes tailored to their specific project needs, enhancing decision making
+                  and client satisfaction.
+                </p>
+              </li>
 
-#summary-title {
-  border-bottom: none;
-}
+              <li>
+                <strong>Project: STS (06/2023 - 12/2023)</strong>
+                <p>
+                  STS is a comprehensive system designed for efficient tracking of
+                  employee work hours, seamless integration with payroll
+                  processes. Automated reporting, and customizable. Additionally, it
+                  provides full transparency on the progress and status of each project,
+                  enabling better project management and resource allocation.
+                </p>
+                <p>
+                  My role in these two projects involves collaborating with the team to
+                  understand business logic, find effective solutions to meet requirements,
+                  and contribute to the design and development of applications.
+                  Technologies in these projects: Java 11. Data Bases: SQL Server.
+                  Server: Tomcat. Repository: SVN and Git with Azure DevOps.
+                </p>           
+              </li>
+             </ul>
+			 
+			 <br/>
+            <h4>-Fiserv 03/2022 -06/2023</h4>
+			      <h4>Sr Profesional, Sofware Development Engineering (Java)</h4>
+            <p>
+			   Fiserv is a global fintech and payments company with solutions for 
+				banking, global commerce, merchant acquiring, billing and payments, 
+				and point-of-sale.
+            </p>
+            <ul>
+              <li>
+                <strong>Project: Commercial Banking Solutions (03/2022 – 06/2023)</strong>
+                <p>
+                 The team in charge of the CBS application which facilitates a unified
+				 solution focused on providing visibility and control, risk management,
+				 transaction management and maximizing rates and balances.<br/>
+				-My work is based in meetings with the team about the logic of the 
+				business, ways to make the requirements possible as well as design and development.<br/> 
+				-Technologies: Java and groovy. Data Bases: PostgreSQL. Server: Tomcat.
+				Azure Devops:  Git, Continuous Integration / Continuous Delivery.
+                </p>
+              </li>
+             </ul>
+		 </section>
+		</div>	
+      </main>
+    </div>
+	
+	
+	<!-- PAGINA 2 -->
+    <div class="page-row">
+      <aside class="left-column">
+        <div class="page-left">
+          <section>
+            <h2 id="skills-title">EDUCATION</h2>
+            <ul class="skills-text" id="skills-list-english">
+              <li>Informatica Empresarial Universidad de Costa Rica</li>
+            </ul>
 
-.skills-text {
-  margin-right: 0.5rem;
-}
+            <ul class="skills-text" style="display:none" id="skills-list-spanish">
+              <li>Programacion: Java (1.6, 1.8, 1.11, 1.17), Groovy.</li>
+              <li>Tegnologias Backend: Spring Framework, Spring Boot, Quarkus.</li>
+              <li>Servicios Web: SOAP, REST (JavaEE, Spring Boot).</li>
+              <li>Microservicios: Spring Boot, Spring Cloud, Docker.</li>
+              <li>Servidores: Tomcat, WebSphere, Glassfish, Tomee.</li>
+              <li>Bases de Datos: PostgreSQL, SQL Server, MySQL, MariaDB, Oracle.</li>
+              <li>Tecgnologias Frontend: JavaScript, JSF (Icefaces, Primefaces), HTML, CSS.</li>
+              <li>Control de Versiones: SVN, GitHub, GitLab, Git (Azure DevOps).</li>
+              <li>Automaticacion Compilacion: Gradle, Maven.</li>
+              <li>CI/CD: Azure DevOps pipelines configuration.</li>
+              <li>Desarrollo de Sofware: SDLC, Agile (Scrum).</li>
+              <li>Manejo de Proyectos: Jira, GitHub Projects, Confluence.</li>
+            </ul>
+          </section>
+        </div>
+      </aside>
 
-.avatar {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  margin-top: 1%;
-}
+      <main class="right-column">
+       <div class="page-right">
+		 <section id ="work-experience-english-2"> 	
+		<h4>-NI(National Instruments) 08/2021 – 03/2022</h4>
+		 <h4>Programmer Analyst (Java)</h4>
+            <p>
+			   NI is engaged in the development and sale of software products, hardware, and services. 
+            </p>
+            <ul>
+              <li>
+                <strong>Project: Assets and Entitlements (08/2021 – 03/2022)</strong>
+                <p>
+                 Team in charge of applications about the sale and maintenance of assets, services, and  entitlements of the company’s product.                                           
+				-My work is based in meetings with the team about the logic of the business,
+				ways to make the requirements possible as well as design, development of the applications.
+				-Technologies: Java, Oracle PL/SQL, Salesforce.
+                </p>
+              </li>
+           </ul>	
 
-.title {
-  color: white;
-}
+		<br/> 
+		<h4>Innteci Innovation 07/2017 – 08/2021</h4>
+		 <h4>Sr Java Developer  </h4>
+            <p>
+			  Innteci provides information and communication technology solutions on modality Business Process Outsourcing.
+            </p>
+            <ul>
+              <li>
+                <strong>Project: Umo (07/2017 – 08/2021)</strong>
+                <p>
+                -Software for immediate delivery of active credit cards, in supermarkets and Bac –Credomatic branches.
+				-My work as a Technical Lead was based on making strategic decisions with
+				my team about the structure of the application, overseeing the development 
+				process, providing technical guidance, ensuring best coding practices, and 
+				facilitating collaboration between developers. I was also responsible for 
+				analyzing requirements, programming, and overseeing the deployment of
+				the application to ensure a robust and scalable solution.
+				-Technologies: Frond-end: Icefaces(JSF). Back-end: Java 8, Java 11, Spring 
+				Framework, Spring Boot, Spring Cloud, Docker. Data Bases: SQL Server. 
+				Server: WebSphere, Tomcat. Repository: Subversion. Environments: IntelliJ 
+				IDEA, STS(Spring Tool Suit), IBM(Application Developer). Continuous 
+				integration: Jenkins.
 
-.linkedin-button {
-  display: inline-flex;
-  align-items: center;
-  background-color: #0077B5;
-  color: white;
-  padding: 5px 10px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
+		 <section id ="work-experience-english-3">
+		<br/> 
+		<h4>Lidesorft 01/2013 – 07/2017</h4>
+		 <h4>Java Developer  </h4>
+            <p>
+			 Lidersoft offers software engineering services for the analysis, design, development and implementation of  applications.
+            </p>
+            <ul>
+              <li>
+                <strong>Project: Compass (Bac Credomatic client) (06/2014 – 07/2017)</strong>
+                <p>
+                Software for the control and flow of customer vehicles associated with a 
+				Bac-Credomatic device.
+				-Mi work was based on doing tasks like creation of new application flows, 
+				maintenance, consumption, or creation of web services, reports and 
+				improve of existing processes. 
+				-Technologies: Frond-end: Primefaces(JSF). Back-end: Java 6, Spring 
+				Framework, Hibernate. Data Bases: SQL Server. Server: Tomee. Repository: 
+				Subversion. Environments: IntelliJ IDEA.
+                </p>
+              </li>
+			  <li>
+                <strong>Project: Investor (Banco Pupular client) (01/2014 – 06/2014)</strong>
+                <p>
+                 Management software for investment funds, treasuries, brokerage houses, and securities custody 
+				 entities. 
+				-My work was based in design application, creation of tables and relationships.
+				-Technologies: Frond-end: Primefaces(JSF). Back-end: Java 6, Spring 
+				Framework, Hibernate. Data Bases: SQL Server. Server: Tomee. Repository: 
+				Subversion. Environments: IntelliJ IDEA.
+                </p>
+              </li>
+			   <li>
+                <strong>Project: Time tracking (01/2013 – 12/2013)</strong>
+                <p>
+                Control software for activities, tasks, projects, clients and hours.
+				-I was the only person in charge of creating and maintaining the application.
+				Technologies: Frond-end: Primefaces(JSF). Back-end: Java 6, Spring
+				Framework. Hibernate. Data Bases: SQL Server. Server: Glassfish. 
+				Repository: Subversion. Environments: IntelliJ IDEA.
+                </p>
+              </li>
+           </ul>			   
+        </section>
+		</div>
+      </main>
+    </div>
+	
+	
+	
+	
+  </div>
 
-.linkedin-button:hover {
-  background-color: #005582;
-  transform: translateY(-2px);
-}
+  <script>
+    let isSpanish = false;
+    function switchLanguage() {
+      isSpanish = !isSpanish;
+      document.getElementById("skills-list-english").style.display = isSpanish ? "none" : "block";
+      document.getElementById("skills-list-spanish").style.display = isSpanish ? "block" : "none";
 
-.linkedin-icon {
-  fill: white;
-}
+      document.getElementById("title").textContent = isSpanish
+        ? "Desarrollador Backend Senior | Java & Spring Boot"
+        : "Senior Backend Developer | Java & Spring Boot";
 
-.links a:hover {
-  text-decoration: underline;
-}
+      document.getElementById("switchButton").textContent = isSpanish
+        ? "English Version"
+        : "Version Español";
 
-section {
-  margin-bottom: 1rem;
-}
+      document.getElementById("summary-title").textContent = isSpanish
+        ? "Resumen Profesional"
+        : "Professional Summary";
 
-section h2 {
-  color: #222;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.3rem;
-  font-size: 0.8rem;
-  margin-top: 20px;
-  color: rgb(50 59 76);
-}
+      document.getElementById("summary-text").innerHTML = isSpanish
+        ? `<p>Ingeniero informático con más de 12 años de experiencia en desarrollo backend con Java y Spring. Experto en la creación de sistemas escalables, la integración de API y la dirección de equipos técnicos. Resolución proactiva de problemas, código limpio y una sólida colaboración con equipos multifuncionales.</p>`
+        : `<p>Computer engineer with over 12 years of experience in backend development using Java and Spring. Skilled in building scalable systems, integrating APIs, and leading technical teams. Proactive problem-solving, clean code, and strong collaboration with cross-functional teams.</p>`;
 
-ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-li {
-  margin-bottom: 5px;
-  margin-left: 0px;
-}
-
-h4, p, ul {
-  margin-block-start: 0;
-  margin-inline-start: 0;
-  margin-block-end: 0;
-}
-
-.content-columns {
-  display: flex;
-  align-items: stretch;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.left-column {
-  background: rgb(228, 228, 228);
-  width: 180px;
-  padding: 1rem;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
-  font-family: 'Lato', sans-serif;
-  color: rgb(50, 59, 76);
-  font-size: 9px;
-  flex-shrink: 0;
-}
-
-.right-column {
-  flex: 3;
-  padding: 1rem;
-  background: rgb(253, 253, 253);
-  font-family: 'Lato', sans-serif;
-  font-size: 13px;
-  color: rgb(50, 59, 76);
-  text-align: justify;
-}
-
-.page-left {
-  background: rgb(228, 228, 228);
-  width: 180px;
-  height: 855px;
-  margin-bottom: 30px;
-  box-sizing: border-box;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.page-right {
-  max-width: 794px;
-   height: 855px;
-  margin-bottom: 30px;
-  background: white;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-.page-row {
-  display: flex;
-  gap: 2rem;
-}
+      document.getElementById("skills-title").textContent = isSpanish ? "HABILIDADES" : "SKILLS";
+      document.getElementById("contact").textContent = isSpanish ? "CONTACTO" : "CONTACT";
+    }
+  </script>
+</body>
+</html>
