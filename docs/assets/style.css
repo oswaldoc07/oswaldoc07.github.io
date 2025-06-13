@@ -7,15 +7,12 @@ body {
 }
 
 .container {
-  width: 794px; /* ancho de A4 en px a 96dpi */
-  height: 1123px; /* alto de A4 */
+  width: auto;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  overflow: hidden;
-
 }
+
 
 .profile {
   background:rgb(50, 59, 76);
@@ -36,6 +33,7 @@ body {
 
 .summary-title{
 	margin-top:20px;
+	color: rgb(50 59 76);
 }
 .summary-text{
 
@@ -126,14 +124,14 @@ li{
 }
 
 .left-column {
-  flex: 1;
-  max-width: 350px;
+  width: 240px; /* FIJALO en lugar de flex: 1 */
   background: rgb(228, 228, 228);
   padding: 1rem;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
   font-family: 'Lato', sans-serif;
-  color:	rgb(50, 59, 76);
+  color: rgb(50, 59, 76);
   font-size: 13.3px;
+  flex-shrink: 0; /* evita que se reduzca más */
 }
 
 .right-column {
@@ -152,4 +150,17 @@ h4, p, ul{
 margin-block-start: 0;
 margin-inline-start: 0;
 margin-block-end: 0;
+}
+
+/* PAGINACIÓN VISUAL CON SCROLL COMO PDF */
+.page {
+  max-width: 794px;
+  height: 1030;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 8px;
 }
