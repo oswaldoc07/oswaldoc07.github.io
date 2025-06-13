@@ -160,7 +160,7 @@ h4, p, ul {
   background: rgb(228, 228, 228);
   width: 180px;
   height: 855px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   box-sizing: border-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -169,8 +169,8 @@ h4, p, ul {
 
 .page-right {
   max-width: 794px;
-   height: 855px;
-  margin-bottom: 30px;
+  height: 855px;
+  margin-bottom: 5px;
   background: white;
   padding: 20px;
   box-sizing: border-box;
